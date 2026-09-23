@@ -1,0 +1,57 @@
+{
+  "mode": "demo",
+  "scenarios": [
+    {
+      "id": "school",
+      "prompt": "Refresh classrooms with wall paint, desks and teaching boards.",
+      "items": [
+        "Wall paint",
+        "Desks",
+        "Teaching boards"
+      ],
+      "question_ids": [
+        "paint-surface",
+        "board-type"
+      ],
+      "flow": [
+        "description",
+        "privacy_review",
+        "clarification",
+        "interpretation_review",
+        "result"
+      ],
+      "result_fixture": "demo-result.json",
+      "note": "Result fixture illustrates paint only; desk/board items remain unresolved rather than fabricated."
+    },
+    {
+      "id": "housing",
+      "prompt": "Prepare a housing brief for water pipes and internal wiring.",
+      "items": [
+        "Water pipes",
+        "Internal wiring"
+      ],
+      "question_ids": [
+        "pipe-use"
+      ],
+      "terminal_state": "insufficient_evidence",
+      "note": "After clarification, show partial metadata discovery and missing evidence state; do not present the paint result."
+    },
+    {
+      "id": "bridge",
+      "prompt": "Find standards relevant to concrete and reinforcement for a bridge.",
+      "items": [
+        "Concrete materials",
+        "Reinforcement"
+      ],
+      "question_ids": [
+        "bridge-use"
+      ],
+      "candidate_metadata_ids": [
+        "STD-269",
+        "STD-1786"
+      ],
+      "terminal_state": "insufficient_evidence",
+      "note": "Requires project-specific design and authoritative current evidence; no structural calculation generated."
+    }
+  ]
+}

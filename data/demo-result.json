@@ -1,0 +1,75 @@
+{
+  "schemaVersion": "1.0",
+  "mode": "demo",
+  "analysisId": "DEMO-PAINT",
+  "draftId": "DEMO-BRIEF",
+  "revision": 1,
+  "status": "completed",
+  "locale": "en",
+  "corpusRelease": "starter-research-2026-09-20",
+  "generatedAt": "2026-09-20T00:00:00Z",
+  "questions": [],
+  "items": [
+    {
+      "id": "ITEM-1",
+      "name": "Classroom wall paint",
+      "confirmedAttributes": [
+        {
+          "name": "surface",
+          "value": "Indoor plaster walls",
+          "origin": "user_answer"
+        }
+      ],
+      "unresolvedFields": [
+        "Required finish and performance",
+        "Edition and amendment status",
+        "Certification applicability"
+      ],
+      "candidates": [
+        {
+          "standardId": "STD-15489",
+          "designation": "IS 15489:2024",
+          "title": "Paint, Plastic Emulsion — Specification",
+          "role": "primary_product",
+          "reason": "A catalogue candidate to review for the stated paint requirement; full scope and current status still need verification.",
+          "sourceIds": [
+            "SRC-PAINT"
+          ],
+          "versionState": "published_observed",
+          "amendmentCount": null,
+          "certificationState": "not_determined",
+          "certificationSourceIds": [],
+          "openConditions": [
+            "Verify authoritative scope and operative orders before tender use."
+          ],
+          "includedInDraft": true
+        }
+      ]
+    }
+  ],
+  "relatedEdges": [],
+  "draftSections": [
+    {
+      "heading": "Draft scope",
+      "body": "Supply paint suitable for the confirmed indoor plaster-wall requirement. Confirm performance, edition, amendments and acceptance criteria with the technical reviewer before tender use.",
+      "sourceIds": [],
+      "unresolved": true
+    }
+  ],
+  "sources": [
+    {
+      "id": "SRC-PAINT",
+      "title": "BIS LIMS — paint listing",
+      "url": "https://lims.bis.gov.in/home/search_is_number/?is_number__doc_no=15489",
+      "evidenceType": "laboratory_listing",
+      "page": null,
+      "clause": null,
+      "checkedAt": "2026-09-20",
+      "contentHash": null
+    }
+  ],
+  "warnings": [
+    "Demonstration mode — not a live recommendation.",
+    "No normative relationships have been verified for this fixture."
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "colors": {
+    "ink950": "#10212B",
+    "ink700": "#3E525B",
+    "paper": "#F6F4EE",
+    "surface": "#FFFEFA",
+    "line": "#DBE0D9",
+    "saffron500": "#FF850A",
+    "saffron700": "#A64306",
+    "forest700": "#24594A",
+    "forestTint": "#EAF2EB",
+    "river700": "#315B70",
+    "danger700": "#A52A35"
+  },
+  "spacing": [
+    4,
+    8,
+    12,
+    16,
+    20,
+    24,
+    32,
+    40,
+    48,
+    64,
+    80,
+    96,
+    128
+  ],
+  "radius": {
+    "card": 20,
+    "control": 12,
+    "dialog": 24,
+    "pill": 999
+  },
+  "font": {
+    "latin": "Manrope",
+    "devanagari": "Noto Sans Devanagari"
+  },
+  "breakpoints": {
+    "mobile": 360,
+    "tablet": 768,
+    "desktop": 1024,
+    "wide": 1280
+  },
+  "motion": {
+    "textEnterMs": 240,
+    "resultRevealMs": 240,
+    "maxScrubLagSeconds": 0.35,
+    "reducedMotionRequired": true
+  }
+}

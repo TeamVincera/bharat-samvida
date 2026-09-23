@@ -1,0 +1,49 @@
+{
+  "schemaVersion": "1.0",
+  "mode": "demo",
+  "analysisId": "DEMO-QUESTION",
+  "draftId": "DEMO-BRIEF",
+  "revision": 1,
+  "status": "needs_clarification",
+  "locale": "en",
+  "corpusRelease": "starter-research-2026-09-20",
+  "generatedAt": "2026-09-20T00:00:00Z",
+  "questions": [
+    {
+      "id": "paint-surface",
+      "itemId": "ITEM-1",
+      "field": "paint-surface",
+      "prompt": "Where will the paint be applied?",
+      "reason": "This distinguishes surface and exposure requirements.",
+      "severity": "identity",
+      "options": [
+        {
+          "id": "A",
+          "label": "Indoor plaster walls"
+        },
+        {
+          "id": "B",
+          "label": "Outdoor plaster walls"
+        },
+        {
+          "id": "C",
+          "label": "Wood surfaces"
+        },
+        {
+          "id": "D",
+          "label": "Metal surfaces"
+        }
+      ],
+      "customAllowed": true,
+      "unknownAllowed": true
+    }
+  ],
+  "items": [],
+  "relatedEdges": [],
+  "draftSections": [],
+  "sources": [],
+  "warnings": [
+    "Demonstration mode — not a live recommendation.",
+    "No normative relationships have been verified for this fixture."
+  ]
+}

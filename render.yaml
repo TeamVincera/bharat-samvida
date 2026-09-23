@@ -1,0 +1,22 @@
+services:
+  - type: web
+    name: bharat-samvida
+    runtime: node
+    plan: free
+    region: singapore
+    buildCommand: npm ci --include=dev && npm run build
+    startCommand: npm run start:render
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_VERSION
+        value: 22
+      - key: NEXT_TELEMETRY_DISABLED
+        value: 1
+      - key: APP_MODE
+        value: live
+      - key: GROQ_API_KEY
+        sync: false
+      - key: GROQ_EXTRACTION_MODEL
+        value: openai/gpt-oss-20b
+      - key: GROQ_RECOMMENDATION_MODEL
+        value: openai/gpt-oss-120b

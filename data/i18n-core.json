@@ -1,0 +1,38 @@
+{
+  "en": {
+    "brand": "Bharat Samvida",
+    "home": "Home",
+    "studio": "Tender Studio",
+    "library": "Legal Library",
+    "welcome": "What would you like to procure?",
+    "review": "Review my brief",
+    "analyse": "Analyse the shared details",
+    "custom": "Something else",
+    "uncertain": "I’m not sure",
+    "skip": "Skip for now",
+    "answer": "Use this answer",
+    "result": "Your specification, with evidence.",
+    "sources": "Sources",
+    "delete": "Delete session",
+    "demo": "Demonstration mode — example recommendations.",
+    "verify": "Verification needed"
+  },
+  "hi": {
+    "brand": "Bharat Samvida",
+    "home": "मुख्य पृष्ठ",
+    "studio": "निविदा स्टूडियो",
+    "library": "कानूनी दस्तावेज़",
+    "welcome": "आप क्या खरीदना चाहते हैं?",
+    "review": "मेरे विवरण की समीक्षा करें",
+    "analyse": "साझा विवरण का विश्लेषण करें",
+    "custom": "कुछ और",
+    "uncertain": "मुझे निश्चित नहीं है",
+    "skip": "अभी छोड़ें",
+    "answer": "इस उत्तर का उपयोग करें",
+    "result": "साक्ष्यों के साथ आपका तकनीकी विवरण।",
+    "sources": "स्रोत",
+    "delete": "सत्र मिटाएँ",
+    "demo": "प्रदर्शन मोड — उदाहरण के लिए सुझाव।",
+    "verify": "सत्यापन आवश्यक है"
+  }
+}

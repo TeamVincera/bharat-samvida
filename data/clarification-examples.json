@@ -1,0 +1,117 @@
+{
+  "mode": "demo",
+  "questions": [
+    {
+      "id": "paint-surface",
+      "itemId": "ITEM-1",
+      "field": "paint-surface",
+      "prompt": "Where will the paint be applied?",
+      "reason": "This distinguishes surface and exposure requirements.",
+      "severity": "identity",
+      "options": [
+        {
+          "id": "A",
+          "label": "Indoor plaster walls"
+        },
+        {
+          "id": "B",
+          "label": "Outdoor plaster walls"
+        },
+        {
+          "id": "C",
+          "label": "Wood surfaces"
+        },
+        {
+          "id": "D",
+          "label": "Metal surfaces"
+        }
+      ],
+      "customAllowed": true,
+      "unknownAllowed": true
+    },
+    {
+      "id": "board-type",
+      "itemId": "ITEM-1",
+      "field": "board-type",
+      "prompt": "What teaching board is needed?",
+      "reason": "Digital and non-digital equipment have different requirements.",
+      "severity": "identity",
+      "options": [
+        {
+          "id": "A",
+          "label": "Chalkboard"
+        },
+        {
+          "id": "B",
+          "label": "Dry-erase board"
+        },
+        {
+          "id": "C",
+          "label": "Interactive digital panel"
+        },
+        {
+          "id": "D",
+          "label": "Both digital and non-digital"
+        }
+      ],
+      "customAllowed": true,
+      "unknownAllowed": true
+    },
+    {
+      "id": "pipe-use",
+      "itemId": "ITEM-1",
+      "field": "pipe-use",
+      "prompt": "What will the pipes carry?",
+      "reason": "The fluid and use affect product scope.",
+      "severity": "identity",
+      "options": [
+        {
+          "id": "A",
+          "label": "Drinking water"
+        },
+        {
+          "id": "B",
+          "label": "Wastewater"
+        },
+        {
+          "id": "C",
+          "label": "Rainwater"
+        },
+        {
+          "id": "D",
+          "label": "Irrigation water"
+        }
+      ],
+      "customAllowed": true,
+      "unknownAllowed": true
+    },
+    {
+      "id": "bridge-use",
+      "itemId": "ITEM-1",
+      "field": "bridge-use",
+      "prompt": "What is the bridge intended for?",
+      "reason": "The use determines which specialist references need review.",
+      "severity": "identity",
+      "options": [
+        {
+          "id": "A",
+          "label": "Pedestrians"
+        },
+        {
+          "id": "B",
+          "label": "Road vehicles"
+        },
+        {
+          "id": "C",
+          "label": "Rail traffic"
+        },
+        {
+          "id": "D",
+          "label": "Mixed traffic"
+        }
+      ],
+      "customAllowed": true,
+      "unknownAllowed": true
+    }
+  ]
+}
