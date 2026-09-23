@@ -31,3 +31,6 @@ deployment/
 *.zip
 *.tsbuildinfo
 .vercel/
+
+# Netlify local deployment state
+.netlify/
