@@ -46,6 +46,8 @@ Run `npm test` and `npm run build` before publishing changes.
 
 ## Netlify Free (no card)
 
-Connect this repository to a Netlify Free project. Build command: `npm run build`; publish directory: `.next`; Node 22. Keep the automatic Next.js adapter enabled. Configure runtime environment variables in the Netlify UI: `SESSION_STORAGE=netlify`, `APP_MODE=live`, and `GROQ_API_KEY` as a secret. Optional model variables retain the defaults listed above.
+This private TeamVincera repository is deployed manually with the Netlify CLI: private organization repository integration requires a paid plan. After `netlify login`, use `netlify link` to select the existing `bharat-samvida` project and run `netlify deploy --prod --context production`. Always run the full build/adapter step; do not use `--no-build` with the raw `.next` directory. GitHub pushes alone do not update the live site.
+
+Build command: `npm run build`; publish directory: `.next`; Node 22. Keep the automatic Next.js adapter enabled. Configure runtime environment variables in the Netlify UI: `SESSION_STORAGE=netlify`, `APP_MODE=live`, and `GROQ_API_KEY` as a secret. Optional model variables retain the defaults listed above.
 
 Netlify uses encrypted Blobs for temporary sessions, replacing the single-server memory limitation described in the Render section. The random HttpOnly session token derives the encryption key and is never stored alongside the encrypted record. Access expires after 30 minutes of inactivity or 2 hours total. A scheduled job removes expired records every ten minutes; cleanup depends on scheduled-function availability. Session deletion removes its stored record. Uploads are limited to 3 MB for serverless request limits. Keep secrets in Netlify, never in this repository.
