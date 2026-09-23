@@ -12,6 +12,7 @@
     "start:render": "next start -H 0.0.0.0"
   },
   "dependencies": {
+    "@netlify/blobs": "^11.1.0",
     "docx": "^9.7.1",
     "groq-sdk": "^1.6.0",
     "gsap": "^3.12.5",

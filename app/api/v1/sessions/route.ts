@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { createSession, deleteSession, validateSessionToken } from '@/lib/sessions';
 
 export async function POST(req: NextRequest) {
-  const { sessionId, token } = createSession();
+  const { sessionId, token } = await createSession();
 
   const response = NextResponse.json({
     success: true,
@@ -28,7 +28,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ authenticated: false }, { status: 401 });
   }
 
-  const session = validateSessionToken(token);
+  const session = await validateSessionToken(token);
   if (!session) {
     return NextResponse.json({ authenticated: false, message: 'Session expired' }, { status: 401 });
   }
@@ -43,7 +43,7 @@ export async function GET(req: NextRequest) {
 export async function DELETE(req: NextRequest) {
   const token = req.cookies.get('bs_session')?.value;
   if (token) {
-    deleteSession(token);
+    await deleteSession(token);
   }
 
   const response = NextResponse.json({

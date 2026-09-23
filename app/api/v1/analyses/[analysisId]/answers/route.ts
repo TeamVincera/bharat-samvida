@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getRecommendationAdapter } from '@/lib/adapters/recommendationAdapter';
-import { validateSessionToken } from '@/lib/sessions';
+import { saveSession, validateSessionToken } from '@/lib/sessions';
 import { UserAnswerSubmission } from '@/lib/types';
 import { scanAndRedactText } from '@/lib/privacy';
 
@@ -14,7 +14,7 @@ export async function POST(
     const { questionId, answerType, optionId, customText, draftId } = body;
 
     const token = req.cookies.get('bs_session')?.value;
-    const session = token ? validateSessionToken(token) : null;
+    const session = token ? await validateSessionToken(token) : null;
     if (!session) return NextResponse.json({error:'Your temporary session expired. Please analyse your brief again.'},{status:401});
     if (typeof draftId !== 'string' || !/^draft-[a-zA-Z0-9-]{1,80}$/.test(draftId) || typeof questionId !== 'string' || !['option','custom','unknown','skip'].includes(answerType) || (customText !== undefined && (typeof customText !== 'string' || customText.length > 1000))) return NextResponse.json({error:'Invalid clarification answer.'},{status:400});
 
@@ -55,6 +55,7 @@ export async function POST(
       draft.answers[questionId] = answerSubmission;
     }
 
+    await saveSession(session, token!);
     return NextResponse.json(updatedResult, {headers:{'Cache-Control':'private, no-store'}});
   } catch (err: any) {
     return NextResponse.json({ error: 'The answer could not be processed. Your previous result is preserved; please retry.' }, { status: 502 });

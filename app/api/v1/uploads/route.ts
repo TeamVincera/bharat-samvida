@@ -3,13 +3,13 @@ import pdf from 'pdf-parse/lib/pdf-parse.js';
 import mammoth from 'mammoth';
 
 export const runtime='nodejs';
-const MAX_FILE_SIZE=10*1024*1024;
+const MAX_FILE_SIZE=3*1024*1024;
 export async function POST(req:NextRequest) {
   try {
     const form=await req.formData();
     const file=form.get('file');
     if(!file||typeof file==='string')return NextResponse.json({error:'No file provided.'},{status:400});
-    if(file.size>MAX_FILE_SIZE)return NextResponse.json({error:'Files must be smaller than 10 MB.'},{status:413});
+    if(file.size>MAX_FILE_SIZE)return NextResponse.json({error:'Files must be smaller than 3 MB.'},{status:413});
     const name=file.name.toLowerCase();
     const buffer=Buffer.from(await file.arrayBuffer());
     let extractedText='';

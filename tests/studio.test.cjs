@@ -45,7 +45,7 @@ test('Completing clarifications preserves item scope and creates clauses',async(
  assert.ok(tenderGaps(r).length>0);assert.ok(r.draftSections.every(s=>s.unresolved));
 });
 test('Answer routes require the server-owned session; forged prior result cannot bypass it',async()=>{
- const {token}=createSession();const session=validateSessionToken(token);const draft=getOrCreateDraft(session,'draft-unit');
+ const {token}=await createSession();const session=await validateSessionToken(token);const draft=getOrCreateDraft(session,'draft-unit');
  const base=addTenderQuestions(fixture());base.draftId=draft.draftId;draft.analysisResult=base;
  const q=base.questions[0];const body={draftId:draft.draftId,questionId:q.id,answerType:'option',optionId:'B',priorResult:{items:[]}};
  const denied=await answersRoute(request(body),{params:{analysisId:base.analysisId}});assert.equal(denied.status,401);

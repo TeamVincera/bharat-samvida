@@ -506,5 +506,7 @@
   "Corpus: ": "स्रोत संग्रह: ",
   "Role: ": "भूमिका: ",
   "[OPEN] ": "[लंबित] ",
-  "Outstanding item details: ": "वस्तु के लंबित विवरण: "
+  "Outstanding item details: ": "वस्तु के लंबित विवरण: ",
+  " and access ends after a maximum of ": " और अधिकतम अवधि के बाद पहुँच समाप्त हो जाती है: ",
+  ". Clicking \"Delete this session\" removes the stored draft immediately. On Netlify, temporary drafts are encrypted; expired records are removed by a cleanup job scheduled every ten minutes. ": "। “यह सत्र हटाएँ” चुनने पर संग्रहीत मसौदा तुरंत हट जाता है। Netlify पर अस्थायी मसौदे एन्क्रिप्ट किए जाते हैं; समाप्त रिकॉर्ड हटाने का कार्य हर दस मिनट के लिए निर्धारित है। "
 }

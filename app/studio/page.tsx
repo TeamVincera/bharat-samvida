@@ -95,8 +95,8 @@ function StudioContent() {
     setUploading(true);
     for (let i = 0; i < files.length; i++) {
       const file = files[i];
-      if (file.size > 10 * 1024 * 1024) {
-        setUploadError(`File "${file.name}" exceeds 10 MB limit.`);
+      if (file.size > 3 * 1024 * 1024) {
+        setUploadError(`File "${file.name}" exceeds 3 MB limit.`);
         continue;
       }
 

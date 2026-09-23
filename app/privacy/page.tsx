@@ -40,7 +40,7 @@ export default function PrivacyPage() {
                 <Lock size={22} color="var(--forest-700)" />
                 <h2 style={{ fontSize: '20px', fontWeight: 600 }}><T text={"3. Ephemeral Sessions & Zero Account Tracking"}/></h2>
               </div>
-              <p style={{ fontSize: '15px', lineHeight: 1.7, color: 'var(--ink-700)' }}><T text={" There are no public user accounts, logins, or permanent cloud storage of tender drafts. Sessions are identified by cryptographically random 256-bit bearer tokens stored in HttpOnly cookies. Sessions expire after "}/><strong><T text={"30 minutes of inactivity"}/></strong><T text={" and are permanently wiped after a maximum of "}/><strong><T text={"2 hours"}/></strong><T text={". Clicking \"Delete this session\" purges all in-memory drafts immediately. "}/></p>
+              <p style={{ fontSize: '15px', lineHeight: 1.7, color: 'var(--ink-700)' }}><T text={" There are no public user accounts, logins, or permanent cloud storage of tender drafts. Sessions are identified by cryptographically random 256-bit bearer tokens stored in HttpOnly cookies. Sessions expire after "}/><strong><T text={"30 minutes of inactivity"}/></strong><T text={" and access ends after a maximum of "}/><strong><T text={"2 hours"}/></strong><T text={". Clicking \"Delete this session\" removes the stored draft immediately. On Netlify, temporary drafts are encrypted; expired records are removed by a cleanup job scheduled every ten minutes. "}/></p>
             </section>
 
             <section className="card-paper" style={{ padding: '32px' }}>

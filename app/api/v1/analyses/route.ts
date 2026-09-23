@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getRecommendationAdapter } from '@/lib/adapters/recommendationAdapter';
-import { validateSessionToken, createSession, getOrCreateDraft } from '@/lib/sessions';
+import { saveSession, validateSessionToken, createSession, getOrCreateDraft } from '@/lib/sessions';
 import { addTenderQuestions } from '@/lib/tender-completeness';
 import { scanAndRedactText } from '@/lib/privacy';
 
@@ -24,14 +24,14 @@ export async function POST(req: NextRequest) {
 
     // Retrieve or create session
     let token = req.cookies.get('bs_session')?.value;
-    let session = token ? validateSessionToken(token) : null;
+    let session = token ? await validateSessionToken(token) : null;
     let newCookieToken: string | null = null;
 
     if (!session) {
-      const created = createSession();
+      const created = await createSession();
       token = created.token;
       newCookieToken = token;
-      session = validateSessionToken(token);
+      session = await validateSessionToken(token);
     }
 
     const draft = getOrCreateDraft(session!, requestedDraftId);
@@ -43,6 +43,7 @@ export async function POST(req: NextRequest) {
     const result = addTenderQuestions(await adapter.analyzeBrief(dlpResult.redactedText, locale as 'en' | 'hi', draft.draftId, draft.revision, req.signal));
 
     draft.analysisResult = result;
+    await saveSession(session!, token!);
 
     const response = NextResponse.json(result, {headers:{'Cache-Control':'private, no-store'}});
     if (newCookieToken) {
