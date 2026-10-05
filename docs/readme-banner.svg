@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="420" viewBox="0 0 1280 420" role="img" aria-labelledby="title desc">
+<title id="title">Bharat Samvida — Clarity in every tender</title>
+<desc id="desc">An Indian procurement assistant by Team Vincera. Visit bharat-samvida.netlify.app to try the live website.</desc>
+<defs><linearGradient id="bg" x2="1" y2="1"><stop stop-color="#102c30"/><stop offset="1" stop-color="#08191e"/></linearGradient><linearGradient id="accent"><stop stop-color="#ffa54c"/><stop offset="1" stop-color="#ff7919"/></linearGradient></defs>
+<rect width="1280" height="420" rx="24" fill="url(#bg)"/>
+<circle cx="1160" cy="94" r="230" fill="none" stroke="#264147" stroke-width="1"/>
+<circle cx="1160" cy="94" r="165" fill="none" stroke="#264147" stroke-width="1"/>
+<circle cx="1160" cy="94" r="100" fill="none" stroke="#264147" stroke-width="1"/>
+<path d="M894 349h300M917 349v-95h48v95m20 0V208h66v141m21 0V161h75v188m-211-67h10m-10 20h10m58-65h27m-27 22h27m-27 22h27m46-88h35m-35 24h35m-35 24h35m-35 24h35" fill="none" stroke="#617b7b" stroke-width="3"/>
+<circle cx="1110" cy="119" r="7" fill="#ff9436"/>
+<rect x="58" y="48" width="5" height="24" rx="2" fill="url(#accent)"/>
+<g font-family="Arial, Helvetica, sans-serif">
+<text x="78" y="66" fill="#c5d8d6" font-size="16" letter-spacing="3">TEAM VINCERA / SIH 26108</text>
+<text x="56" y="154" fill="#f6f5ed" font-size="66" font-weight="700" letter-spacing="-2">Bharat Samvida</text>
+<text x="60" y="203" fill="#ffab60" font-size="29">Clarity in every tender.</text>
+<text x="60" y="245" fill="#c0d0d0" font-size="19">Describe a need. Resolve the gaps. Build a better brief.</text>
+<rect x="60" y="288" width="300" height="57" rx="12" fill="url(#accent)"/>
+<text x="87" y="324" fill="#11272b" font-size="20" font-weight="700">EXPLORE THE LIVE SITE →</text>
+<text x="60" y="380" fill="#c0d0d0" font-size="18">bharat-samvida.netlify.app</text>
+</g></svg>

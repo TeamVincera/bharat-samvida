@@ -1,82 +1,92 @@
 <div align="center">
-  <img src="public/assets/bharat-samvida-logo.png" alt="Bharat Samvida logo" width="130" />
-  <h1>Bharat Samvida</h1>
-  <p><strong>Clarity in every tender.</strong></p>
-  <p>Turn everyday procurement needs into structured, evidence-backed specification drafts.</p>
-  <p>
-    <a href="https://bharat-samvida.netlify.app/">Live website</a> ·
-    <a href="https://bharat-samvida.netlify.app/studio">Tender Studio</a> ·
-    <a href="https://bharat-samvida.netlify.app/library">Legal Library</a>
-  </p>
-  <p><strong>Team Vincera · Smart India Hackathon · Problem Statement 26108</strong></p>
-  <p>Next.js 15 · TypeScript · Groq · English / हिंदी</p>
+
+<a href="https://bharat-samvida.netlify.app/">
+  <img src="docs/readme-banner.svg" alt="Bharat Samvida — click to explore the live website" width="100%" />
+</a>
+
+# [↗ TRY THE LIVE WEBSITE](https://bharat-samvida.netlify.app/)
+
+### [bharat-samvida.netlify.app](https://bharat-samvida.netlify.app/)
+
+**No sign-up required · English & हिंदी · Works on phone, tablet and desktop**
+
+[Open Tender Studio](https://bharat-samvida.netlify.app/studio) &nbsp; • &nbsp; [Explore Legal Library](https://bharat-samvida.netlify.app/library) &nbsp; • &nbsp; [Run locally](#run-locally)
+
+**Built by Team Vincera for Smart India Hackathon · Problem Statement 26108**
+
 </div>
 
 ---
 
-## Why Bharat Samvida?
+> [!TIP]
+> **The best way to understand Bharat Samvida is to use it.**
+> [Visit the live website →](https://bharat-samvida.netlify.app/) Scroll through the development story, describe a procurement need, and explore a library of source documents—all without creating an account.
 
-A school needs fresh paint. A neighbourhood needs reliable water pipes. A bridge needs materials that meet the right specifications. Before any of that work begins, someone has to write a clear tender.
+## Better specifications. Better places to live.
 
-Finding the relevant Indian Standards can be difficult: product scopes overlap, editions change, and supporting test methods or certification requirements can be easy to miss. Bharat Samvida helps procurement teams move from a plain-language description to a structured brief, targeted clarification questions, source-linked standard candidates, and a document they can review.
+A brighter classroom. Reliable water supply. A bridge that connects communities. Every public project starts with a need—and a tender that explains it clearly.
 
-The project addresses **SIH Problem Statement 26108**, associated with the **Department of Consumer Affairs (DoCA), Ministry of Consumer Affairs, Food & Public Distribution**. It is an independent SIH project, not an official government or BIS service.
+**Bharat Samvida helps turn everyday procurement descriptions into structured, source-linked specification drafts.** It brings together AI-assisted standard discovery, focused clarification questions, and an accessible legal library so users can prepare a better brief before technical review.
 
-## Explore the experience
+The project addresses the **Department of Consumer Affairs (DoCA)** problem statement under the **Ministry of Consumer Affairs, Food & Public Distribution**. This is an independent SIH project, not an official government or BIS service.
 
-| Space | What you can do |
-| --- | --- |
-| **Home** | Follow a scroll-driven journey through school renovation, neighbourhood development, and bridge construction. |
-| **Tender Studio** | Describe a requirement, upload a brief, answer clarification questions, and review a provisional specification. |
-| **Legal Library** | Browse 44 curated legal and procurement documents by category, read PDFs inside the app, and download the originals. |
+## Three spaces. One connected experience.
 
-### Tender Studio
+| 🏫 Home | ✍️ Tender Studio | 📚 Legal Library |
+| --- | --- | --- |
+| Scroll through school renovation, neighbourhood development, and bridge construction. | Describe your requirement, resolve missing details, and prepare a provisional specification. | Browse **44 curated documents**, read PDFs inside the app, and download original sources. |
+| [Experience the journey →](https://bharat-samvida.netlify.app/) | [Start your brief →](https://bharat-samvida.netlify.app/studio) | [Open the library →](https://bharat-samvida.netlify.app/library) |
 
-- **Write naturally.** Describe your procurement in English or Hindi, without needing to know a standard number first.
-- **Bring an existing brief.** Upload searchable PDF, DOCX, or TXT files, up to 3 MB. PDF extraction supports up to 100 pages; extracted text is limited to 60,000 characters.
-- **Clarify what matters.** Questions offer four choices, a custom answer, and an unknown option. Missing quantities, performance requirements, delivery details, and commercial context stay visible.
-- **Review the evidence.** See suggested standard candidates, the reasons for their inclusion, source links, and explicit uncertainty.
-- **Export your work.** Generate PDF, Word, or JSON outputs. Document exports include tender particulars, scope, technical requirements, quality checks, commercial terms, and a financial offer schedule.
-- **Start without an account.** Work in an anonymous, temporary session and delete it when finished.
+## From “we need…” to a reviewable draft
 
-### A visual story of better procurement
+**01 — Describe**  
+Write in English or Hindi, or upload an existing PDF, DOCX, or TXT brief.
 
-The homepage connects three development scenes into one reversible scroll journey. Text and renovation stages follow scroll progress, while camera-style movement links each location. The current flight preview uses still artwork with animated transitions; it is not filmed drone footage or a true 360° scene.
+**02 — Clarify**  
+Answer targeted questions with four suggested options, a custom answer, or “unknown.” Missing requirements stay visible.
 
-Tender Studio uses a dotted emblem-to-orb loading sequence with three orb treatments. The interface adapts to phone, tablet, and desktop layouts.
+**03 — Review**  
+Explore standard candidates, reasons for inclusion, supporting links, and unresolved details.
 
-### English and Hindi
+**04 — Download**  
+Export a **PDF, Word document, or JSON** for further review. Document sections cover tender particulars, scope, technical requirements, quality checks, commercial terms, and a financial offer schedule.
 
-Language selection persists across the interface. The library uses official Hindi material where available and offers labelled AI-assisted Hindi reading translations where supported. Original documents remain accessible. Scanned or unextractable pages may require the original PDF; translated reading pages are not official legal translations.
-
-## Try a brief
+### Try this in Tender Studio
 
 > We need water-based paint for the dry interior plaster walls of a government primary school. Help us identify suitable standards, quality checks, and the details we should specify before inviting bids.
 
-1. Open [Tender Studio](https://bharat-samvida.netlify.app/studio) and enter the brief.
-2. Review the privacy scan and answer the clarification questions.
-3. Check the suggested standards, supporting sources, and unresolved requirements.
-4. Download a provisional document for technical and procurement review.
+**[Try this brief on the live website →](https://bharat-samvida.netlify.app/studio)**
 
-Use a sample brief when exploring the public demo.
+## Designed to feel approachable
 
-## How it works
+| Feature | Experience |
+| --- | --- |
+| **Scroll-driven storytelling** | A reversible journey through three development scenes, with camera-style movement and text tied to scroll progress. |
+| **Emblem-to-orb animation** | A dotted loading sequence transforms into three thinking-orb treatments. |
+| **English / हिंदी** | Persistent interface language, with official Hindi material where available and labelled AI-assisted reading translations where supported. |
+| **Documents in context** | Category browsing, an embedded PDF reader, and original-file downloads. |
+| **Anonymous drafting** | No login page; drafts use temporary sessions with an explicit deletion option. |
+| **Flexible input** | Searchable PDF, DOCX, and TXT uploads up to 3 MB; PDF extraction up to 100 pages and 60,000 extracted characters. |
+
+The current homepage flight preview animates still artwork. Hindi reading translations are not official legal translations; scanned or unextractable pages may require the original PDF.
+
+## Behind the experience
 
 ```mermaid
 flowchart LR
-    A[Brief or uploaded document] --> B[Text extraction and privacy checks]
-    B --> C[Server-side Groq analysis]
+    A[Describe or upload] --> B[Extract text and check privacy]
+    B --> C[Groq analysis]
     D[Curated standards metadata] --> C
-    C --> E[Schema and source-ID validation]
-    E --> F[Clarification questions]
-    F --> G[Reviewed answers and draft requirements]
-    G --> H[Specification dossier]
-    H --> I[PDF / DOCX / JSON]
+    C --> E[Validate structure and source IDs]
+    E --> F[Clarify missing details]
+    F --> G[Review the dossier]
+    G --> H[PDF / DOCX / JSON]
 ```
 
-Groq interprets procurement intent against a curated standards catalogue. The server validates the output structure and filters candidate IDs against that catalogue. Clarification answers are applied to the server-owned draft before the final review step.
+Groq interprets procurement intent against a curated catalogue. The server validates structured responses, filters standard IDs against the catalogue, and applies clarification answers to the server-owned draft.
 
-This implementation does **not** claim comprehensive BIS coverage, a verified normative-reference graph, automatic legal compliance, or continuously verified edition and amendment status. Certification applicability and current standards must be checked with the issuing authority. Unknown requirements remain unresolved rather than being filled with invented values. Exported documents are preparation drafts, not issued tenders.
+> [!IMPORTANT]
+> **A drafting assistant, with human review built in.** The current catalogue is a starter collection, not comprehensive BIS coverage. Latest editions, amendments, mandatory certification, and normative references are not automatically verified. Unknown details remain explicit. Exported documents are provisional drafts, not issued tenders or compliance approvals.
 
 ## Technology
 
@@ -89,6 +99,9 @@ This implementation does **not** claim comprehensive BIS coverage, a verified no
 | Documents | PDF.js, pdf-parse, Mammoth, PDFKit, docx |
 | Temporary storage | In-memory locally; encrypted Netlify Blobs on Netlify |
 | Hosting | Netlify with the Next.js runtime adapter |
+
+<details>
+<summary><strong>Developer guide — local setup, environment variables and deployment</strong></summary>
 
 ## Run locally
 
@@ -137,7 +150,7 @@ Tests cover clarification handling, export validation, PDF/DOCX generation, sess
 
 ## Deploy to Netlify
 
-The live site uses a **manual CLI deployment**. GitHub pushes do not automatically update it. This setup keeps the TeamVincera repository private without relying on a paid private-organization Git integration.
+The live site uses a **manual CLI deployment**. GitHub pushes do not automatically update it. The repository is public. Hosting is still configured for manual releases; making the repository public did not enable automatic deployments.
 
 For a maintainer updating the existing site:
 
@@ -164,6 +177,9 @@ The current deployment required no payment card. Netlify and Groq have separate 
 
 After publishing, verify `/api/health`, submit a sample brief, answer a clarification, download a PDF/Word file, and open a legal document. Deployment guidance: [Netlify Next.js documentation](https://docs.netlify.com/build/frameworks/framework-setup-guides/nextjs/overview/).
 
+
+</details>
+
 ## Privacy and session handling
 
 - Groq credentials stay on the server and are excluded from the repository.
@@ -175,6 +191,9 @@ After publishing, verify `/api/health`, submit a sample brief, answer a clarific
 - Local in-memory sessions disappear when the process restarts. This is temporary drafting storage, not a durable records system.
 
 For application-facing details, see the [privacy page](https://bharat-samvida.netlify.app/privacy).
+
+<details>
+<summary><strong>Repository structure, contributing and credits</strong></summary>
 
 ## Repository map
 
@@ -205,3 +224,17 @@ Built by **Team Vincera** for SIH Problem Statement 26108.
 Legal documents are attributed to their issuing authorities in the catalogue and library. Their inclusion does not imply government endorsement. Third-party components, fonts, and assets retain their own terms; see the [orb attribution](public/assets/loader/ATTRIBUTION.md), [orb licence](public/assets/loader/ORB-LICENSE.txt), [font licence](public/fonts/OFL.txt), and [Mukta font licence](public/fonts/Mukta-OFL.txt).
 
 This repository does not currently declare an open-source licence for the application code. Contact the maintainers before redistribution.
+
+</details>
+
+---
+
+<div align="center">
+
+### A clearer brief is a better beginning.
+
+**[Explore Bharat Samvida →](https://bharat-samvida.netlify.app/)**
+
+Made by **Team Vincera** · Clarity in every tender.
+
+</div>
